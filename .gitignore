@@ -176,15 +176,28 @@ $RECYCLE.BIN/
 
 # 项目特定文件
 # ============
-# 日志文件（可能包含敏感信息）
+# 日志文件（可能包含敏感信息 - 用户数据、用户ID等）
 logs/
 *.log
 
-# 输出文件（解析结果，可能包含用户数据）
+# 输出文件（解析结果，包含用户数据 - 必须忽略）
+# 批量处理后会在output目录下生成大量结果文件，全部忽略
 output/
+# 标准命名格式：文件名_result.扩展名
 *.result.json
 *.result.csv
 *.result.txt
+*_result.json
+*_result.csv
+*_result.txt
+# 测试和重构产生的文件
+*_refactored.json
+*_refactored.csv
+*_stream_output.*
+# 任何包含result的文件（防止遗漏）
+*result*.json
+*result*.csv
+*result*.txt
 
 # 配置文件（可能包含密钥、API密钥等）
 config/
@@ -196,7 +209,7 @@ config/
 !example.*.yml
 !example.*.yaml
 
-# 测试输出文件
+# 测试输出文件（解析结果，包含测试数据）
 tests/*_result.json
 tests/*_result.csv
 tests/*_result.txt
@@ -229,10 +242,6 @@ temp/
 *.rar
 *.7z
 
-# 大文件（根据项目需要调整）
-# *.json  # 如果需要忽略所有JSON文件，取消注释
-# *.csv   # 如果需要忽略所有CSV文件，取消注释
-
 # 备份文件
 *.orig
 *.save
@@ -252,3 +261,12 @@ notes/
 drafts/
 TODO.txt
 scratch/
+
+# 批量处理相关（新增功能）
+# ============
+# 批量处理可能会生成大量结果文件，全部忽略
+batch_results/
+processed/
+# 临时测试和调试文件
+test_output/
+temp_output/

@@ -45,11 +45,31 @@ GETLOG/
 
 ### 命令行使用
 
+#### 批量处理模式（推荐）
+
 ```bash
-# 基本用法：解析日志文件并输出JSON格式
+# 批量处理logs文件夹下的所有日志文件
+python src/main.py
+
+# 批量处理并指定输出格式（CSV格式）
+python src/main.py -f csv
+
+# 批量处理并显示解析结果预览
+python src/main.py --show
+
+# 批量处理大文件（使用流式处理，节省内存）
+python src/main.py --stream
+
+# 指定日志目录和输出目录
+python src/main.py --logs-dir logs --output-dir output
+```
+
+#### 单文件处理模式
+
+```bash
+# 解析单个日志文件并输出JSON格式
 # 输出文件名自动为：日志文件名_result.json
 python src/main.py logs/your_log_file.log
-# 例如：解析 test.log 会生成 test_result.json
 
 # 指定输出文件
 python src/main.py logs/your_log_file.log -o output/result.json
@@ -59,7 +79,15 @@ python src/main.py logs/your_log_file.log -f csv -o output/result.csv
 
 # 在控制台显示解析结果
 python src/main.py logs/your_log_file.log --show
+
+# 使用流式处理（大文件）
+python src/main.py logs/large_file.log --stream
 ```
+
+**注意**：
+- 如果不指定 `input_file` 参数，程序会自动批量处理 `logs/` 文件夹下的所有日志文件
+- 批量处理时，每个日志文件会在 `output/` 目录下生成对应的结果文件
+- 支持的文件格式：`.log`, `.txt`, `.json`
 
 ### Python代码中使用
 
@@ -274,7 +302,7 @@ def extract_fields_from_log_data(log_data: Dict[str, Any], extract_bill_info_fun
 
 - [设计文档](DESIGN.md) - 详细的设计思路和架构说明
 - [使用指南](USAGE.md) - 详细的使用说明和示例
-- [项目分析](项目合理性分析.md) - 项目合理性分析报告
+- [批量处理说明](BATCH_PROCESSING.md) - 批量处理功能详细说明
 
 ## 许可证
 
