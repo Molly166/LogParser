@@ -1,0 +1,254 @@
+# Python
+# ======
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDEs
+# =====
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# 项目特定文件
+# ============
+# 日志文件（可能包含敏感信息）
+logs/
+*.log
+
+# 输出文件（解析结果，可能包含用户数据）
+output/
+*.result.json
+*.result.csv
+*.result.txt
+
+# 配置文件（可能包含密钥、API密钥等）
+config/
+*.conf
+*.config
+*.ini
+*.yaml
+*.yml
+!example.*.yml
+!example.*.yaml
+
+# 测试输出文件
+tests/*_result.json
+tests/*_result.csv
+tests/*_result.txt
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# 敏感数据文件
+*.secret
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+*.credentials
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 压缩文件（可能包含大量数据）
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# 大文件（根据项目需要调整）
+# *.json  # 如果需要忽略所有JSON文件，取消注释
+# *.csv   # 如果需要忽略所有CSV文件，取消注释
+
+# 备份文件
+*.orig
+*.save
+*.old
+
+# 日志分析结果（防止误上传解析后的数据）
+analysis/
+reports/
+statistics/
+
+# 用户数据
+user_data/
+data/
+
+# 个人笔记和草稿
+notes/
+drafts/
+TODO.txt
+scratch/

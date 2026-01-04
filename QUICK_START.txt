@@ -1,0 +1,55 @@
+========================================
+日志解析器 - 快速使用指南
+========================================
+
+【最常用命令】
+--------------
+python src/main.py 日志文件路径
+
+示例：
+  python src/main.py logs/app.log
+  python src/main.py D:\logs\application.log
+  python src/main.py tests/test_log.txt
+
+
+【查看结果预览】
+--------------
+python src/main.py 日志文件路径 --show
+
+
+【指定输出文件】
+--------------
+python src/main.py 日志文件路径 -o output/result.json
+
+
+【导出为CSV（Excel可打开）】
+--------------
+python src/main.py 日志文件路径 -f csv -o output/result.csv
+
+
+【导出为TXT文本格式】
+--------------
+python src/main.py 日志文件路径 -f txt -o output/result.txt
+
+
+【输出文件说明】
+--------------
+- 默认输出：与日志文件同目录，文件名 = 日志名_result.json
+- 例如：app.log → app_result.json
+
+
+【提取的字段】
+--------------
+- query: 用户输入
+- bill_info: 账单信息  
+- reply: 大模型回复
+- 如果字段缺失，显示为 null
+
+
+【完整帮助】
+--------------
+python src/main.py -h
+
+
+========================================
+
