@@ -84,6 +84,20 @@ python src/main.py logs/your_log_file.log --show
 python src/main.py logs/large_file.log --stream
 ```
 
+### 可视化界面（GUI）
+
+使用 Python 自带的 Tkinter，无需额外依赖：
+
+```bash
+python src/gui.py
+```
+
+GUI 支持：
+- 单文件/批量目录处理
+- 选择输出目录与输出格式（json/csv/txt）
+- 可选流式处理（大文件）
+- 界面内查看运行日志与前3条结果预览
+
 **注意**：
 - 如果不指定 `input_file` 参数，程序会自动批量处理 `logs/` 文件夹下的所有日志文件
 - 批量处理时，每个日志文件会在 `output/` 目录下生成对应的结果文件

@@ -40,6 +40,20 @@ python src/main.py logs/app.log -f txt -o output/result.txt
 python src/main.py logs/app.log --show
 ```
 
+### 5. 可视化界面（GUI）
+
+项目提供一个基于 Tkinter 的可视化界面（无需额外依赖）：
+
+```bash
+python src/gui.py
+```
+
+在界面中可以：
+- 选择单个日志文件，或选择一个目录进行批量处理
+- 选择输出目录、输出格式（json/csv/txt）
+- 勾选“流式处理”以适配大文件
+- 查看运行日志与前3条解析结果预览
+
 ## 完整命令示例
 
 ### 示例1：解析日志文件并查看结果

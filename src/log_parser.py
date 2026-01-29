@@ -377,7 +377,7 @@ class LogParser:
             for result in results:
                 fieldnames.update(result.keys())
             
-            with open(output_path, 'w', encoding='utf-8', newline='') as f:
+            with open(output_path, 'w', encoding='utf-8-sig', newline='') as f:
                 writer = csv.DictWriter(f, fieldnames=sorted(fieldnames))
                 writer.writeheader()
                 for result in results:
@@ -438,7 +438,7 @@ class LogParser:
         elif format == 'csv':
             import csv
             fieldnames = None
-            with open(output_path, 'w', encoding='utf-8', newline='') as f:
+            with open(output_path, 'w', encoding='utf-8-sig', newline='') as f:
                 writer = None
                 for result in results_stream:
                     if fieldnames is None:

@@ -1,5 +1,5 @@
-00:06:24.854 [task-65221] INFO  modelAnalysis - [saveModelAnalysisLog,789] - {"messageUser":"测试输入1","userId":1638}
-00:06:24.855 [task-65222] INFO  modelAnalysis - [saveModelAnalysisLog,790] - {"analysisResult":"{\"action\": \"add\", \"message_interpretation\": \"账单:[{'类别': '支出', '金额': '10.00'}]\", \"status\": \"success\"}","userId":1639}
-00:06:24.856 [task-65223] INFO  modelAnalysis - [saveModelAnalysisLog,791] - {"reply":"这是回复信息","userId":1640}
+00:06:24.854 [task-65221] INFO  modelAnalysis - [saveModelAnalysisLog,789] - {"messageUser":"测试输入1","userId":1001}
+00:06:24.855 [task-65222] INFO  modelAnalysis - [saveModelAnalysisLog,790] - {"analysisResult":"{\"action\": \"add\", \"message_interpretation\": \"账单:[{'类别': '支出', '金额': '10.00'}]\", \"status\": \"success\"}","userId":1002}
+00:06:24.856 [task-65223] INFO  modelAnalysis - [saveModelAnalysisLog,791] - {"reply":"这是回复信息","userId":1003}
 00:06:24.857 [task-65224] INFO  modelAnalysis - [saveModelAnalysisLog,792] - {"messageUser":"测试输入2","reply":"完整回复","analysisResult":"{\"message_interpretation\": \"账单:[{'类别': '收入', '金额': '20.00'}]\"}"}
-00:06:24.858 [task-65225] INFO  modelAnalysis - [saveModelAnalysisLog,793] - {"userId":1641}
+00:06:24.858 [task-65225] INFO  modelAnalysis - [saveModelAnalysisLog,793] - {"userId":1004}
